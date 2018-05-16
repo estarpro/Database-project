@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+    <title>User management</title>
+</head>
+<body>
+<h1>Create a new user</h1>
+<p>
+<form action="user-man.php" method="POST">
+    <input type="hidden" name="op" value="new">
+    Username:<br>
+    <input type="text" name="user" size="60"><br>
+    Password:<br>
+    <input type="password" name="pass" size="60"><br>
+    <input type="submit" value="Create user">
+</form>
+<h1>Delete a user</h1>
+<p>
+<form action="user-man.php" method="POST">
+    <input type="hidden" name="op" value="delete">
+    Username:<br>
+    <input type="text" name="user" size="60"><br>
+    Password:<br>
+    <input type="password" name="pass" size="60"><br>
+    <input type="submit" value="Log in">
+</form>
+<h1>Change password</h1>
+<p>
+<form action="user-man.php" method="POST">
+    <input type="hidden" name="op" value="change">
+    Username:<br>
+    <input type="text" name="user" size="60"><br>
+    Current password:<br>
+    <input type="password" name="pass" size="60"><br>
+    New password:<br>
+    <input type="password" name="newpass" size="60"><br>
+    <input type="submit" value="Change password">
+</form>
+<p>
+    <a href="http://www.openwall.com/phpass/">Powered by phpass</a> and
+    <a href="http://www.openwall.com/passwdqc/">passwdqc</a>
+</p>
+</body>
+</html>
